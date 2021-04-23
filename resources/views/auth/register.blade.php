@@ -15,7 +15,7 @@
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::laabel('email', 'Email') !!}
+                    {!! Form::label('email', 'Email') !!}
                     {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                 </div>
                 
@@ -26,7 +26,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('pasword_confirmation', 'Confirmation') !!}
-                    {!! Form::passwprd('password_confirmation', ['class' =>'form-control']) !!}
+                    {!! Form::password('password_confirmation', ['class' =>'form-control']) !!}
                 </div>
                 
                 {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
