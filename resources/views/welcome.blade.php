@@ -4,16 +4,10 @@
     @if (Auth::check())
         <div class="row">
             <aside class="col-sm-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">{{ Auth::user()->name }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <imag class="rounded imag-fluid" src="{{ Gravatar::get(Auth::user()->email, ['size' =>500]) }}" alt="">
-                    </div>
-                </div>
+                @include('users.card')
             </aside>
             <div class="col-sm-8">
+                @include('microposts.form')
                 @include('microposts.microposts')
             </div>
         </div>

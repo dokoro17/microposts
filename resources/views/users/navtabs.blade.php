@@ -1,6 +1,6 @@
 <ul class="nav nav-tabs nav justifited mb-3">
     <li class="nav-item">
-        <a href="{{ route('users.show', ['user' => $user->ud]) }}" class="nav-link {{ Request::routeIs('users.show') ? 'active' : '' }}">
+        <a href="{{ route('users.show', ['user' => $user->id]) }}" class="nav-link {{ Request::routeIs('users.show') ? 'active' : '' }}">
             TimeLine
             <span class="badge badge-secondary">{{ $user->microposts_count }}</span>
         </a>
